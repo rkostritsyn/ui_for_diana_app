@@ -1,22 +1,14 @@
+// Copyright 2015 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// Thanks for checking out Flutter!
+// Like what you see? Tweet us @flutterio
+
 import 'package:flutter/material.dart';
-import 'package:ui_for_diana_app/cupertino_alert.dart';
-import 'package:ui_for_diana_app/cupertino_buttons_demo.dart';
-import 'package:ui_for_diana_app/cupertino_navigations.dart';
-import 'package:ui_for_diana_app/cupertino_slides.dart';
-import 'package:ui_for_diana_app/login_page.dart';
 
-void main() => runApp(MyApp());
+import 'gallery/app.dart';
 
-class MyApp extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CupertinoSliderDemo(),
-    );
-  }
+void main() {
+  runApp(const GalleryApp());
 }
